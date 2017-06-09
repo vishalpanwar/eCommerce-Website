@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://127.0.0.1:8000/admin/flatpages/flatpage/1/change/ -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Change flat page | Django site admin</title>
+<link rel="stylesheet" type="text/css" href="./Change flat page _ Django site admin_files/base.css">
+<link rel="stylesheet" type="text/css" href="./Change flat page _ Django site admin_files/forms.css">
+
+
+<script type="text/javascript" src="./Change flat page _ Django site admin_files/saved_resource"></script>
+<script type="text/javascript" src="./Change flat page _ Django site admin_files/core.js"></script>
+<script type="text/javascript" src="./Change flat page _ Django site admin_files/jquery.js"></script>
+<script type="text/javascript" src="./Change flat page _ Django site admin_files/jquery.init.js"></script>
+<script type="text/javascript" src="./Change flat page _ Django site admin_files/RelatedObjectLookups.js"></script>
+<script type="text/javascript" src="./Change flat page _ Django site admin_files/actions.js"></script>
+<script type="text/javascript" src="./Change flat page _ Django site admin_files/urlify.js"></script>
+<script type="text/javascript" src="./Change flat page _ Django site admin_files/prepopulate.js"></script>
+<script type="text/javascript" src="./Change flat page _ Django site admin_files/xregexp.js"></script>
+<script type="text/javascript" src="./Change flat page _ Django site admin_files/collapse.js"></script>
+
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+
+<body class=" app-flatpages model-flatpage change-form" data-admin-utc-offset="0">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="http://127.0.0.1:8000/admin/">Django administration</a></h1>
+
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Welcome,
+                <strong>vishal</strong>.
+            
+            
+                
+                    <a href="http://127.0.0.1:8000/">View site</a> /
+                
+                
+                    
+                    
+                
+                
+                <a href="http://127.0.0.1:8000/admin/password_change/">Change password</a> /
+                
+                <a href="http://127.0.0.1:8000/admin/logout/">Log out</a>
+            
+        </div>
+        
+        
+        
+    </div>
+    <!-- END Header -->
+    
+<div class="breadcrumbs">
+<a href="http://127.0.0.1:8000/admin/">Home</a>
+› <a href="http://127.0.0.1:8000/admin/flatpages/">Flat Pages</a>
+› <a href="http://127.0.0.1:8000/admin/flatpages/flatpage/">Flat pages</a>
+› /pages/about/ -- About Us
+</div>
+
+    
+
+    
+        
+    
+
+    <!-- Content -->
+    <div id="content" class="colM">
+        
+        <h1>Change flat page</h1>
+        <div id="content-main">
+
+
+  <ul class="object-tools">
+    
+    <li>
+        
+        <a href="http://127.0.0.1:8000/admin/flatpages/flatpage/1/history/" class="historylink">History</a>
+    </li>
+    <li><a href="http://127.0.0.1:8000/admin/r/10/1/" class="viewsitelink">View on site</a></li>
+    
+  </ul>
+
+
+<form enctype="multipart/form-data" action="http://127.0.0.1:8000/admin/flatpages/flatpage/1/change/" method="post" id="flatpage_form" novalidate=""><input type="hidden" name="csrfmiddlewaretoken" value="GBdW7THbqvKw00r9lLWCSYm2VwzGAuKZKrMSs0wXcaVlsdNHP2JdVGnF9bQ9wL7O">
+<div>
+
+
+
+
+
+
+
+  <fieldset class="module aligned ">
+    
+    
+    
+        <div class="form-row field-url">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_url">URL:</label>
+                        
+                            <input id="id_url" maxlength="100" name="url" type="text" value="/pages/about/" required="">
+                        
+                    
+                    
+                        <p class="help">Example: '/about/contact/'. Make sure to have leading and trailing slashes.</p>
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-title">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_title">Title:</label>
+                        
+                            <input class="vTextField" id="id_title" maxlength="200" name="title" type="text" value="About Us" required="">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-content">
+            
+            
+                <div>
+                    
+                    
+                        <label for="id_content">Content:</label>
+                        
+                            <textarea class="vLargeTextField" cols="40" id="id_content" name="content" rows="10"></textarea>
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-sites">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_sites">Sites:</label>
+                        
+                            
+<div class="related-widget-wrapper">
+    <select multiple="multiple" id="id_sites" name="sites" required="">
+<option value="1" selected="selected">example.com</option>
+</select>
+    
+        
+        
+        <a class="related-widget-wrapper-link add-related" id="add_id_sites" href="http://127.0.0.1:8000/admin/sites/site/add/?_to_field=id&amp;_popup=1" title="Add another site">
+            <img src="./Change flat page _ Django site admin_files/icon-addlink.svg" alt="Add">
+        </a>
+        
+        
+    
+</div>
+
+                        
+                    
+                    
+                        <p class="help">Hold down "Control", or "Command" on a Mac, to select more than one.</p>
+                    
+                </div>
+            
+        </div>
+    
+</fieldset>
+
+
+  <fieldset class="module aligned collapse collapsed">
+    <h2>Advanced options (<a id="fieldsetcollapser0" class="collapse-toggle" href="http://127.0.0.1:8000/admin/flatpages/flatpage/1/change/#">Show</a>)</h2>
+    
+    
+        <div class="form-row field-registration_required">
+            
+            
+                <div class="checkbox-row">
+                    
+                    
+                        <input id="id_registration_required" name="registration_required" type="checkbox"><label class="vCheckboxLabel" for="id_registration_required">Registration required</label>
+                    
+                    
+                        <p class="help">If this is checked, only logged-in users will be able to view the page.</p>
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-template_name">
+            
+            
+                <div>
+                    
+                    
+                        <label for="id_template_name">Template name:</label>
+                        
+                            <input class="vTextField" id="id_template_name" maxlength="70" name="template_name" type="text">
+                        
+                    
+                    
+                        <p class="help">Example: 'flatpages/contact_page.html'. If this isn't provided, the system will use 'flatpages/default.html'.</p>
+                    
+                </div>
+            
+        </div>
+    
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+<input type="submit" value="Save" class="default" name="_save">
+
+    
+    <p class="deletelink-box"><a href="http://127.0.0.1:8000/admin/flatpages/flatpage/1/delete/" class="deletelink">Delete</a></p>
+
+
+<input type="submit" value="Save and add another" name="_addanother">
+<input type="submit" value="Save and continue editing" name="_continue">
+</div>
+
+
+
+    <script type="text/javascript" id="django-admin-form-add-constants" src="./Change flat page _ Django site admin_files/change_form.js">
+    </script>
+
+
+
+
+<script type="text/javascript" id="django-admin-prepopulated-fields-constants" src="./Change flat page _ Django site admin_files/prepopulate_init.js" data-prepopulated-fields="[]">
+</script>
+
+
+</div>
+</form></div>
+
+        
+        <br class="clear">
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+
+
+</body></html>

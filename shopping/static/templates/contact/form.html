@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    contact
+{% endblock %}
+
+{% block content %}
+<h2> Form </h2>
+{% endblock %}
+
+{%  block form-heading %}
+    <div class="section-content">
+        <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
+    </div>
+{% endblock %}
+
+{% block form-content %}
+    <div class="contact-section">
+                <form action = '.' method = 'POST'>
+                    {% csrf_token %}
+                    {% for field in form %}
+                        {% if field.label != "Message" %}
+                        <div class="form-group">
+                            <label for = '{{ field.label_tag }}'>{{ field.label_tag }}</label><br>
+                            {{ field }}
+                        </div>
+                        {% else %}
+                        <div class="form-group">
+                            <label for = '{{ field.label_tag }}'>{{ field.label_tag }}</label><br>
+                            {{ field }}
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                        <button type = 'submit' >Submit </button>
+                </form>
+            </div>
+
+{% endblock %}

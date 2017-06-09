@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    {% if cart_exists and cart_exists.active %}
+        <table class = 'table'><thead><th>Item</th><th>Description</th></thead>
+        {% for item in cart_exists.products.all %}
+            <tr><td>{{ item.name }}</td><td>{{ item.description }}</td></tr>
+        {% endfor %}
+        </table>
+
+    {% else %}
+        <br><strong>{{ mssg }}</strong>
+    {% endif %}
+
+    {% if cart_exists %}
+        <a class = "btn btn-default" href = "/empty/">Empty Cart</a>
+    {% endif %}
+{% endblock %}

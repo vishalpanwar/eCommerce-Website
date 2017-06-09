@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{query}}</h1>
+<img src = "/media/{{ query.image1 }}">
+<p>{{query.description}}</p>
+
+{% endblock %}

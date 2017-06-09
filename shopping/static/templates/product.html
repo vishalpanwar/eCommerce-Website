@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ slug }}
+{% endblock %}
+
+{% block content %}
+    <br><br>
+    <div>
+        <a href = "/products/" class = "btn btn-primary active"><h5>Back To Products</h5></a>
+    </div>
+    <h1>{{query.name}}</h1>
+    <img src = "/media/{{ query.image1 }}" width = "400" height = "300" /><br>
+    <h4>{{query.description}}</h4>
+    <a type="button" class="btn btn-primary active" href = "/products/{{ slug }}/add">Add Product</a>
+{% endblock %}

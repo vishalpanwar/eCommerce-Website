@@ -1,0 +1,23 @@
+{% extends 'base_bootstrap.html' %}
+
+{% block content %}
+
+<ol>
+{% for query in queryset %}
+    <li>
+        {% if query.slug %}
+            <a href = '{{ query.slug }}'>{{ query.name }} </a>
+        {% endif %}
+        {% if query.description %}
+             : {{ query.description }}
+        {% endif %}
+        {% if query.image1 %}
+            <img src = "/media/{{ query.image1 }}" width="100">
+        {% endif %}
+    </li>
+{% endfor %}
+</ol>
+<br>
+{{ name }}
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Products
+{% endblock %}
+
+
+{% block content %}
+<br>
+<table class = "table">
+    <thead><th></th><th>Item</th><th>Description</th><th>Image</th></thead>
+    {% for query in queryset %}
+        <tr><td><h3>{{ forloop.counter }}.</h3></td><td><a href = '{{ query.slug }}'><h3>{{ query.name }}</h3></a></td>
+            <td>
+                {% if query.description %}
+                    {{ query.description }}
+                {% else %}
+                    <p>No description available!</p>
+                {% endif %}
+            </td>
+
+            <td>
+                {% if query.image1 %}
+                    <img src = "/media/{{ query.image1 }}" width="300" height = 200>
+                {% endif %}
+            </td>
+        </tr>
+
+    {% endfor %}
+</table>
+<br>
+
+{% endblock %}
